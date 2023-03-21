@@ -39,8 +39,7 @@ export default function App() {
         placeholderContent={({
           totalBytesWritten,
           totalBytesExpectedToWrite,
-        }: // decimalPlace,
-        DownloadProgressData & { decimalPlace: number }) => (
+        }) => (
           <Placeholder
             totalBytesWritten={totalBytesWritten}
             totalBytesExpectedToWrite={totalBytesExpectedToWrite}
@@ -49,7 +48,7 @@ export default function App() {
         )}
         shouldPlay
         isLooping
-        // useNativeControls
+        useNativeControls
         resizeMode="contain"
         style={styles.container}
       />

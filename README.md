@@ -1,6 +1,6 @@
 # expo-cached-media
 
-Super fast cached media components (combined Image/ImageBackground, as well as Video) for React Native applications powered by Expo.
+Super fast cached media components (combined Image/ImageBackground, as well as Video) for React Native applications powered by Expo. Forked from [expo-cached-image](https://github.com/echowaves/expo-cached-image).
 
 ## Install
 
