@@ -51,12 +51,7 @@ export const getProgressPercent = (
   totalBytesExpectedToWrite: number,
   decimalPlace = 0, // output percentage without decimal by default
 ) => {
-  const rawPercentage =
-    getProgress(
-      totalBytesWritten,
-      totalBytesExpectedToWrite,
-      3 + decimalPlace,
-    ) * 100
+  const rawPercentage = (totalBytesWritten / totalBytesExpectedToWrite) * 100
   return Number(rawPercentage?.toFixed(decimalPlace))
 }
 
